@@ -22,16 +22,17 @@
        <main>
         <section class="calc">
             <div class="container pt-5 mt-5 d-flex justify-content-center">
-                <form action="" class="form-control p-5 m-5 border border-2 rounded-4" onsubmit="clac()" >
-                    <input type="number" name="val1" id="val1" placeholder="Enter value 1" class="p-3 m-2 form-control">
-                    <input type="number" name="val2" id="val2" placeholder="Enter value 2" class="p-3 m-2 form-control">
-                    <input type="number" name="ans" id="ans" placeholder="Answer" class="p-3 m-2 form-control">
+                <form action="" class="form-control p-5 m-5 border border-2 rounded-4 mt-3 pt-3" onsubmit="return false" >
+                    <h2 class="fw-bold display-4 text-center mb-5">Caculator</h2>
+                    <input type="number" name="val1" id="val1" placeholder="Enter value 1" class="p-3 m-2 mb-3 form-control">
+                    <input type="number" name="val2" id="val2" placeholder="Enter value 2" class="p-3 m-2 mb-3 form-control">
+                    <input type="number" name="ans" id="ans" placeholder="Answer" class="p-3 m-2 mb-3 form-control">
 
                     <div class="buttons d-flex justify-content-center">
                     <button type="submit" class="btn btn-outline-primary text-center fs-3 m-4 px-4" onclick="sum()">+</button>
-                    <button type="submit" class="btn btn-outline-primary text-center fs-3 m-4 px-4" onclick="">-</button>
-                    <button type="submit" class="btn btn-outline-primary text-center fs-3 m-4 px-4" onclick="">×</button>
-                    <button type="submit" class="btn btn-outline-primary text-center fs-3 m-4 px-4" onclick="">÷</button>
+                    <button type="submit" class="btn btn-outline-primary text-center fs-3 m-4 px-4" onclick="sub()">-</button>
+                    <button type="submit" class="btn btn-outline-primary text-center fs-3 m-4 px-4" onclick="multi()">×</button>
+                    <button type="submit" class="btn btn-outline-primary text-center fs-3 m-4 px-4" onclick="div()">÷</button>
                     </div>
                 </form>
             </div>
@@ -48,5 +49,7 @@
             integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
             crossorigin="anonymous"
         ></script>
+
+        <script src="./calc.js"></script>
     </body>
 </html>

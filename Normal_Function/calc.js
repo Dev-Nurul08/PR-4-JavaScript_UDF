@@ -1,12 +1,29 @@
-let value1 = document.getElementById(val1);
-let value2 = document.getElementById(val2);
-let answer = document.getElementById(ans)
+let value1 = document.getElementById('val1');
+let value2 = document.getElementById('val2');
+let answer = document.getElementById('ans')
 
-const calc = () =>{
+
     const sum = () =>{
-        let val1 = value1.value;
-        let val2 = value2.value;
-        let ans =  answer.value
-        ans = val1 + val2;
+         val1 = parseFloat(value1.value);
+         val2 = parseFloat(value2.value);
+        
+        ans.value =  val1 + val2;
     }
-}
+    const sub = () =>{
+         val1 = parseFloat(value1.value);
+         val2 = parseFloat(value2.value);
+        
+        ans.value =  val1 - val2;
+    }
+    const multi = () =>{
+         val1 = parseFloat(value1.value);
+         val2 = parseFloat(value2.value);
+        
+        ans.value =  val1 * val2;
+    }
+    const div = () =>{
+         val1 = parseFloat(value1.value);
+         val2 = parseFloat(value2.value);
+        
+        ans.value =  val1 / val2;
+    }
